@@ -231,6 +231,56 @@ main p{
   padding-top: 5rem;
 }
 
+#informed form{
+  background-color: var(--news-flash);
+  border: 2px solid var(--truth-text);
+  padding: 2rem;
+}
+
+#informed form > label{
+  color: var(--watchdog-white);
+  font-family: "Source Sans 3";
+}
+
+input[type = text], input[type = tel]{
+  display: block;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+#phonename{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+#phonename label{
+  font-family: "Source Sans 3";
+  color: var(--watchdog-white);
+  font-size: 16px;
+  padding-bottom: 0.5rem;
+}
+
+fieldset{
+  border: 1px solid var(--blue-bulletin);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+legend{
+  margin-left: 5px;
+  color: var(--watchdog-white);
+  font-family: "Source Sans 3";
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+fieldset label{
+  font-family: "Source Sans 3";
+  color: var(--watchdog-white);
+}
+
 /* ///ADD/// medium styles 620px */
 
 
