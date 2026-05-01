@@ -1,10 +1,57 @@
-/* CSS by ///ADD/// YOUR NAME */
+/* CSS by JASON TAN */
 
 /* Imported Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wdth,wght@0,18..144,87..112,300..900;1,18..144,87..112,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 /* ///ADD/// CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
 /* Root Variables */
 :root {
@@ -39,13 +86,150 @@ body.dark-mode {
 }
 
 /* ///ADD/// Skip Link Styles */
+#skip{
+  position: absolute;
+  top: -100%; 
+  left: 0;
+  background-color: var(--news-flash);
+  color: var(--watchdog-white);
+  padding: 1rem;
+  z-index: 1000; 
+  font-family: "Source Sans 3";
+  transition: top 0.3s; 
+}
+
+#skip:focus{
+  top: 0;
+}
 
 /* ///ADD/// Navigation Styles */
+nav ul{
+  display: flex;
+  gap: 1rem;
+}
+
+nav li > a{
+  background-color: var(--news-flash);
+  color: var(--watchdog-white);
+  font-family: "Source Sans 3";
+  text-decoration: none;
+  padding: 0.5rem;
+  text-transform: uppercase;
+}
+
+.menu-button{
+  visibility: hidden;
+}
 
 /* ///ADD/// Global Layout Styles */
+body{
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+}
+
+header{
+  background-color: var(--blue-bulletin);
+  padding: 3rem 3rem 2rem 6rem;
+  margin-bottom: 3rem;
+}
 
 /* ///ADD/// Global Text Styles */
+h1{
+  font-family: "Merriweather";
+  color: var(--watchdog-white);
+  font-size: 48px;
+  margin-bottom: 1rem;
+}
 
+header p{
+  font-family: "Merriweather";
+  color: var(--watchdog-white);
+  margin-bottom: 1rem;
+  font-size: 16px;
+}
+
+main h2{
+  font-family: "Merriweather";
+  color: var(--truth-text);
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+
+main p{
+  font-family: "Source Sans 3";
+  color: var(--truth-text);
+  font-size: 16px;
+  margin-bottom: 2rem;
+}
+
+#main blockquote{
+  font-family: "Merriweather";
+  font-weight: bold;
+  color: var(--truth-text);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+#breaking{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding-bottom: 5rem;
+}
+
+#breaking iframe{
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#breaking section{
+  background-color: var(--news-flash);
+  color: var(--watchdog-white);
+  padding: 1rem;
+}
+
+#breaking section h3{
+  font-family: "Merriweather";
+  font-size: 24px;
+  padding-bottom: 1rem;
+}
+
+#breaking section p{
+  color: var(--watchdog-white);
+  border-top: 2px solid var(--watchdog-white);
+  padding-top: 1rem;
+  font-size: 18px;
+}
+
+#featured{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+#featured div{
+  border: 2px solid var(--blue-bulletin);
+  padding: 1rem;
+  box-shadow: 0px 5px 15px var(--truth-text);
+}
+
+#featured div h3{
+  font-family: "Merriweather";
+  font-size: 24px;
+  padding-bottom: 1rem;
+}
+
+#featured div p{
+  border-top: 2px solid var(--blue-bulletin);
+  padding-top: 1rem;
+  font-size: 18px;
+}
+
+#informed{
+  padding-top: 5rem;
+}
 
 /* ///ADD/// medium styles 620px */
 
