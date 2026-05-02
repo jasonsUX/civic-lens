@@ -281,7 +281,110 @@ fieldset label{
   color: var(--watchdog-white);
 }
 
+fieldset input{
+  padding: 1rem;
+}
+
+input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+#group{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20rem;
+  text-wrap: nowrap;
+  padding: 1rem;
+}
+
+#group div{
+  display: flex;
+  align-items:center;
+  margin-bottom: 1rem;
+}
+
+input[type="submit"]{
+  background-color: var(--blue-bulletin);
+  color: var(--watchdog-white);
+  font-family: "Source Sans 3";
+  font-size: 24px;
+  padding: 0.5rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+footer{
+  margin-top: 1rem;
+  background-color: var(--blue-bulletin);
+  padding: 3rem 3rem 2rem 6rem;
+}
+
+footer h2{
+  font-family: "Merriweather";
+  color: var(--watchdog-white);
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+
+footer a{
+  background-color: var(--news-flash);
+  color: var(--watchdog-white);
+  font-family: "Source Sans 3";
+  text-decoration: none;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  margin-right: 1rem;
+}
+
+footer p{
+  font-family: "Source Sans 3";
+  color: var(--watchdog-white);
+  margin-top: 2rem;
+  text-align: center;
+}
+
 /* ///ADD/// medium styles 620px */
+@media screen and (max-width: 620px) {
+  body{
+    max-width: 100%;
+  }
+  nav a{
+    display: block;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  nav ul{
+    display: block;
+  }
+
+  nav li > a{
+    width: 80%;
+  }
+
+
+  #featured{
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  #featured div{
+    margin-bottom: 2rem;
+  }
+
+  #group{
+    display:block;
+  }
+
+  #socials a{
+    display: block;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+}
 
 
 /* ///ADD/// large styles 920px */
