@@ -142,7 +142,7 @@ h1{
   margin-bottom: 1rem;
 }
 
-header p{
+header blockquote{
   font-family: "Merriweather";
   color: var(--watchdog-white);
   margin-bottom: 1rem;
@@ -166,7 +166,6 @@ main p{
 #main blockquote{
   font-family: "Merriweather";
   font-weight: bold;
-  color: var(--truth-text);
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -346,6 +345,30 @@ footer p{
   text-align: center;
 }
 
+h2.dark-mode{
+  color: var(--watchdog-white);
+}
+
+h2.light-mode{
+  color: var(--truth-text);
+}
+
+p.light-mode{
+  color: var(--truth-text);
+}
+
+p.dark-mode{
+  color: var(--watchdog-white);
+}
+
+blockquote.dark-mode{
+  color: var(--watchdog-white);
+}
+
+blockquote.light-mode{
+  color: var(--truth-text);
+}
+
 /* ///ADD/// medium styles 620px */
 @media screen and (max-width: 620px) {
   body{
@@ -388,9 +411,26 @@ footer p{
 
 
 /* ///ADD/// large styles 920px */
+@media screen and (max-width: 920px) {
+  #featured{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #group{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
 
 /* ///ADD/// x-large styles 1024px */
+@media screen and (max-width: 1024px) {
+  #group{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
 
 /* ///ADD/// Interaction Queries for color scheme light and dark and motion preference */
@@ -398,5 +438,5 @@ footer p{
 
 /* ///ADD///  Feature Query for :has() that checks if the #menu-toggle is checked */
 @supports (selector(:has(*))) {
-
+  
 }
